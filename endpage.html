@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Luxury Car Showroom</title>
+    <link rel="stylesheet" href="endpage.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            SINISTERS
+        </header>
+        <main>
+            <h2>Checkout</h2>
+            <form class="checkout-form" action="final.html" method="get">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" min="0" max="10" required >
+                </div>
+                <div class="form-group">
+                    <label for="car-model">Car Model:</label>
+                    <select id="car-model" name="car-model" required style="height: 50px; font-size: 18px;">
+                        <option value="model1">Select</option>
+                        <option value="model2">Bugatti Tourbillon</option>
+                        <option value="model3">Rolls-Royce Spectre</option>
+                        <option value="model3">McLaren W1</option>
+                        <option value="model3">Cadillac Escalade V</option>
+                        <option value="model3">Lamborghini Huracán STO</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Method:</label>
+                    <select id="payment" name="payment" required style="height: 50px; font-size: 18px;">
+                        <option value="credit-card">Select</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </div>
+                <!-- <a href="final.html" class="button">Book Now</a><br> -->
+                <button class="button">submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 SINISTERS. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
